@@ -1,6 +1,5 @@
 import {Item} from './../types/Item'
 
-
 type Props = { 
     item: Item,
     onChange: (id: number, done: boolean) => void;
@@ -11,8 +10,6 @@ const deleteTasks = (id: number) => {
     console.log(id);
     return null;
 }
-
-
 
 export const TodoItem = ({item, onChange,handleRemove} : Props ) => {
     let isDone  = item.done ? "bg-blue-300 border-blue-400" : "bg-white border-slate-200";
