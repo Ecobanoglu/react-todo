@@ -33,7 +33,7 @@ function App() {
 
   const handleRemoveTask = (id:number) => {
     let newList = [...list];
-    newList = newList.filter(function (x) { return x.id !== id });
+    newList = newList.filter(x=> x.id !== id);
     setList(newList)
   }
 
