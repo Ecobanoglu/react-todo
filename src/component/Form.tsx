@@ -4,18 +4,14 @@ type Props = {
     onEnter: (taskName: string) => void
 }
 
-
-
 export const AddForm = ({onEnter}: Props) => {
-
     const [inputText, setInputText] = useState('');
-    
+   
     const handleKeyUp = (event: React.KeyboardEvent<HTMLInputElement>) => {
         if(event.code === 'Enter' && inputText !== ''){
             onEnter(inputText);
             setInputText('')
         }
-        
     }
 
     return (
