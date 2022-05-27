@@ -6,11 +6,6 @@ type Props = {
     handleRemove: (id: number) => void;
 }
 
-const deleteTasks = (id: number) => {
-    console.log(id);
-    return null;
-}
-
 export const TodoItem = ({item, onChange,handleRemove} : Props ) => {
     let isDone  = item.done ? "bg-blue-300 border-blue-400" : "bg-white border-slate-200";
     return (
