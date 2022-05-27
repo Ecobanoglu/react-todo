@@ -7,10 +7,8 @@ import {TodoItem} from './component/TodoItem';
 
 
 function App() {
-
   const [list, setList] = useState<Item[]>([
     {id: 1, name: 'Örnek bir todo listesidir.', done: false },
-
   ]);
 
   const handleAddtask = (taskName: string) => {
@@ -21,7 +19,6 @@ function App() {
       done: false,
     });
     setList(newList);
-  
   }
   
   const handleTaskChange = (id: number, done: boolean) => {
@@ -54,6 +51,7 @@ function App() {
                 handleRemove={handleRemoveTask} 
               />
             ))} 
+            
           </div>
       </div>
     </div>
